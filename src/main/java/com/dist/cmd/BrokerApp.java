@@ -77,7 +77,7 @@ public class BrokerApp {
         if (controller.getCurrentLeaderId() == brokerId) {
             System.out.println("🎯 This broker is now the CONTROLLER!");
         } else {
-            System.out.println("📡 This broker is a FOLLOWER. Controller ID: " + controller.getCurrentLeaderId());
+            System.out.println("📡 This broker is a  not the CONTROLLER. Current Controller ID: " + controller.getCurrentLeaderId());
         }
     }
     

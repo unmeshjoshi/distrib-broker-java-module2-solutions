@@ -61,7 +61,7 @@ Open **new terminal windows** for each broker to demonstrate controller election
 ### Terminal 2: Start Broker 1
 ```bash
 # Option 1: Using the default run task
-./gradlew run --args="localhost:2181 1"
+./gradlew runBroker --args="localhost:2181 1"
 
 # Option 2: Using the specific broker task
 ./gradlew runBroker1
@@ -70,7 +70,7 @@ Open **new terminal windows** for each broker to demonstrate controller election
 ### Terminal 3: Start Broker 2
 ```bash
 # Option 1: Using the default run task
-./gradlew run --args="localhost:2181 2"
+./gradlew runBroker --args="localhost:2181 2"
 
 # Option 2: Using the specific broker task
 ./gradlew runBroker2
@@ -79,7 +79,7 @@ Open **new terminal windows** for each broker to demonstrate controller election
 ### Terminal 4: Start Broker 3
 ```bash
 # Option 1: Using the default run task
-./gradlew run --args="localhost:2181 3"
+./gradlew runBroker --args="localhost:2181 3"
 
 # Option 2: Using the specific broker task
 ./gradlew runBroker3
@@ -92,7 +92,7 @@ Open another terminal to create topics using the TopicCommandApp:
 ### Create a Topic
 ```bash
 # Option 1: Using the default run task
-./gradlew run --args="localhost:2181 createTopic test-topic 3 2"
+./gradlew runTopicCommand --args="localhost:2181 listTopics test-topic 3 2"
 
 # Option 2: Using the specific topic creation task
 ./gradlew createTestTopic
